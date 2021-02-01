@@ -13,10 +13,8 @@
     <div v-if="fetching"><h2>Fetching Data!</h2></div>
     <div class="search-results" v-for="brewery in list" :key="brewery.id">
       <ul>
-        <li><span class="title">Name:</span> <span class="brew">{{ brewery.name }}</span></li>
-        <li><span class="title">Street:</span> <span class="brew">{{ brewery.street}}</span></li>
-        <li><span class="title">City:</span><span class="brew"> {{ brewery.city }}</span></li>
-        <li><span class="title">Zip:</span><span class="brew"> {{brewery.postal_code}}</span></li>
+        <li><span class="title">Id:</span> <span class="brew">{{ brewery.id }}</span></li>
+        <li><span class="title">Modes:</span> <span class="brew">{{ brewery.mode}}</span></li>
       </ul>
     </div>
   </div>

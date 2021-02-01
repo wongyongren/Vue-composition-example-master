@@ -6,7 +6,7 @@ export default function() {
   const submitted = async () => {
 
     const {response, error, fetchData, fetching} = useFetch(
-      `https://api.openbrewerydb.org/breweries/?by_name=${val.value}`,
+      `https://my-json-server.typicode.com/wongyongren/demo/modes/?id=${val.value}`,
       {}
     );
     fetchData();
